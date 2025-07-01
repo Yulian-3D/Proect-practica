@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JWTWithCookiesAndRefreshTokens.Data.Entities
+namespace Project.DAL.Entities
 {
     public class UserRole : IdentityRole<int>
     {

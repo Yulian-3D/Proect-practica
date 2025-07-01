@@ -1,5 +1,4 @@
-﻿using JWTWithCookiesAndRefreshTokens.Data.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,9 @@ namespace Project.DAL.Entities
         public int SellerUserId { get; set; }
         public int ItemId { get; set; }
         public int Price { get; set; }
-        public DateTime TradeDate { get; set; }
+        public DateTime TradeCreateDate { get; set; }
+        public DateTime? TradeConfirmationDate { get; set; }
+        public bool IsConfirmed { get; set; }
         public User BuyerUser { get; set; }
         public User SellerUser { get; set; }
         public Item Item { get; set; }
