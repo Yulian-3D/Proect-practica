@@ -32,7 +32,7 @@ namespace JWTWithCookiesAndRefreshTokens.Data.Seeding
                 Email = "adminUser@example.com",
                 NormalizedUserName = "ADMINUSER",
                 Name = "Admin User",
-                Count = 1000
+                Count = 1000000
             };
 
             if (userManager.Users.All(u => u.UserName != adminUser.UserName))
@@ -53,7 +53,7 @@ namespace JWTWithCookiesAndRefreshTokens.Data.Seeding
                 Email = "user@example.com",
                 NormalizedUserName = "USER",
                 Name = "Standard User",
-                Count = 100
+                Count = 100000
             };
 
             if (userManager.Users.All(u => u.UserName != standardUser.UserName))

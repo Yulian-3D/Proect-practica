@@ -28,10 +28,11 @@ namespace Project.DAL.Persistence.Seeding
                 Id = 1,
                 Name = "Dagger of Darkness",
                 Price = 51,
-                PhotoLink = "https://images.unsplash.com/photo-1614890094520-7b8dd0ec56d2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWZyaWNhbiUyMGFtZXJpY2FuJTIwbWFufGVufDB8fDB8fHww",
+                PhotoLink = "",
                 Rarity = RarityEnum.Epic,
-                Description = $"Mega super duper dagger."
+                Description = ""
             });
+
         }
 
         private static void SeedItemTradeEntities()
@@ -56,6 +57,7 @@ namespace Project.DAL.Persistence.Seeding
                 UserId = 1,
                 ItemId = 1
             });
+
         }
     }
 }
