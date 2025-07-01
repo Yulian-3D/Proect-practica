@@ -9,7 +9,7 @@ namespace JWTWithCookiesAndRefreshTokens.Data.Seeding
     {
         public static async Task SeedRolesAsync(RoleManager<UserRole> roleManager)
         {
-            if (!await roleManager.RoleExistsAsync("Admin"))
+            if (!await roleManager.RoleExistsAsync("Administrator"))
             {
                 await roleManager.CreateAsync(
                     new UserRole { Id = 1, Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
