@@ -24,8 +24,8 @@ namespace Project.DAL.Persistence.Seeding
         private static void SeedItemEntities()
         {
             Items.Add(new Item()
-            {//////УЛЬДУАР//////
-                //Огненный Левиафан
+            {//////////////////////////////////////////////////////////////////////////УЛЬДУАР////////////////////////////////////////////////////////////////////////
+                /////////////////////////////////////////////////////////////////Огненный Левиафан
                 Id = 1,
                 Name = "Боевой шлем в железных заклепках",
                 Price = 75000,
@@ -258,7 +258,152 @@ namespace Project.DAL.Persistence.Seeding
                 Rarity = RarityEnum.Epic,
                 Description = "материал"
             });
-
+            ////////////////////////////////////////////////////////////////////Повелитель горнов Игнис
+            Items.Add(new Item()
+            {
+                Id = 27,
+                Name = "Железное сердце",
+                Price = 150000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "аксессуар"
+            });
+            Items.Add(new Item()
+            {
+                Id = 28,
+                Name = "Кираса из кузни жизни",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "грудь"
+            });
+            Items.Add(new Item()
+            {
+                Id = 29,
+                Name = "Накулачники хранителя очага",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "наручи"
+            });
+            Items.Add(new Item()
+            {
+                Id = 30,
+                Name = "Напряженность",
+                Price = 100000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "посох"
+            });
+            Items.Add(new Item()
+            {
+                Id = 31,
+                Name = "Обожженный кушак",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "пояс"
+            });
+            Items.Add(new Item()
+            {
+                Id = 32,
+                Name = "Обугленные саронитовые наголенники",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "ступни"
+            });
+            Items.Add(new Item()
+            {
+                Id = 33,
+                Name = "Огненный Круг",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "кольцо"
+            });
+            Items.Add(new Item()
+            {
+                Id = 34,
+                Name = "Покрытое сажей оплечье",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "плечо"
+            });
+            Items.Add(new Item()
+            {
+                Id = 35,
+                Name = "Резец мироздателя",
+                Price = 150000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "двуручний топор"
+            });
+            Items.Add(new Item()
+            {
+                Id = 36,
+                Name = "Сапоги крадущегося пламени",
+                Price = 100000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "ступни"
+            });
+            Items.Add(new Item()
+            {
+                Id = 37,
+                Name = "Скипетр творения",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "жезл"
+            });
+            Items.Add(new Item()
+            {
+                Id = 38,
+                Name = "Тлеющее кольцо",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "кольцо"
+            });
+            Items.Add(new Item()
+            {
+                Id = 39,
+                Name = "Угольный латный ремень",
+                Price = 100000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "пояс"
+            });
+            Items.Add(new Item()
+            {
+                Id = 40,
+                Name = "Шлем хранителя горнов",
+                Price = 75000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "голова"
+            });
+            Items.Add(new Item()
+            {
+                Id = 41,
+                Name = "Потемневший осколок Вал'анира",
+                Price = 175000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "осколок"
+            });
+            Items.Add(new Item()
+            {
+                Id = 42,
+                Name = "Первоэлемент",
+                Price = 25000,
+                PhotoLink = "",
+                Rarity = RarityEnum.Epic,
+                Description = "материал"
+            });
+            
         }
 
         private static void SeedItemTradeEntities()
