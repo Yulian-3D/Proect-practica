@@ -1,4 +1,5 @@
-﻿using Project.DAL.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Project.DAL.Entities;
 using Project.DAL.Persistence;
 using Project.DAL.Repositories.Contracts;
 using System;
@@ -11,9 +12,11 @@ namespace Project.DAL.Repositories
 {
     public class ItemRepository : GenericRepository<Item>, IItemRepository
     {
+        private readonly AppDbContext _context;
         public ItemRepository(AppDbContext context)
             : base(context)
         {
+            _context = context;
         }
     }
 }
