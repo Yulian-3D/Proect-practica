@@ -201,7 +201,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Иллюзия: Отведение удара",
                 Price = 75000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Rare,
                 Description = "чертеж"
             });
             Items.Add(new Item()
@@ -210,7 +210,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Иллюзия: Вытягивание крови",
                 Price = 75000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Rare,
                 Description = "чертеж"
             });
             Items.Add(new Item()
@@ -219,7 +219,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Потемневший осколок Вал'анира",
                 Price = 175000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Mythic,
                 Description = "осколок"
             });
             Items.Add(new Item()
@@ -228,7 +228,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Формула иллюзии: Отведение удара",
                 Price = 75000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Rare,
                 Description = "формула"
             });
             Items.Add(new Item()
@@ -237,7 +237,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Формула иллюзии: Вытягивание крови",
                 Price = 75000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Rare,
                 Description = "формула"
             });
             Items.Add(new Item()
@@ -391,7 +391,7 @@ namespace Project.DAL.Persistence.Seeding
                 Name = "Потемневший осколок Вал'анира",
                 Price = 175000,
                 PhotoLink = "",
-                Rarity = RarityEnum.Epic,
+                Rarity = RarityEnum.Mythic,
                 Description = "осколок"
             });
             Items.Add(new Item()
@@ -403,7 +403,7 @@ namespace Project.DAL.Persistence.Seeding
                 Rarity = RarityEnum.Epic,
                 Description = "материал"
             });
-            
+            //////////////////////////////////////////////////////////Oстрокрылая
         }
 
         private static void SeedItemTradeEntities()
