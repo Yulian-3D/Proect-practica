@@ -13,5 +13,6 @@ namespace Project.DAL.Entities
         public int ItemId { get; set; }
         public User User { get; set; }
         public Item Item { get; set; }
+        public List<ItemTrade> ItemTrades { get; set; } = new List<ItemTrade>();
     }
 }

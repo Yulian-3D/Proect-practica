@@ -413,7 +413,7 @@ namespace Project.DAL.Persistence.Seeding
                 Id = 1,
                 BuyerUserId = 1,
                 SellerUserId = 2,
-                ItemId = 1,
+                UserItemId = 1,
                 Price = 55,
                 TradeCreateDate = DateTime.Now.AddDays(-1),
                 IsConfirmed = false

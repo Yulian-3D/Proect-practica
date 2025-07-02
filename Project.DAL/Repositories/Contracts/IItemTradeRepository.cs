@@ -9,5 +9,7 @@ namespace Project.DAL.Repositories.Contracts
 {
     public interface IItemTradeRepository : IGenericRepository<ItemTrade>
     {
+        Task<IEnumerable<ItemTrade>> GetItemTradesByUserId(int userId);
+        Task<ItemTrade> GetItemTradeForConfirmTradeById(int itemTradeId);
     }
 }

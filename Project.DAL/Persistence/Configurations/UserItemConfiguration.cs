@@ -24,6 +24,10 @@ namespace Project.DAL.Persistence.Configurations
             builder.HasOne(mg => mg.Item)
                 .WithMany(g => g.UserItems)
                 .HasForeignKey(mg => mg.ItemId);
+
+            builder.HasMany(mg => mg.ItemTrades)
+                .WithOne(g => g.UserItem)
+                .HasForeignKey(mg => mg.UserItemId);
         }
     }
 }

@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Project.DAL.DTOs.ItemDTOs;
+using Project.DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.DAL.Entities
+namespace Project.DAL.DTOs.ItemTradeDTOs
 {
-    public class ItemTrade
+    public class GetItemTradesDTO
     {
         public int Id { get; set; }
         public int BuyerUserId { get; set; }
@@ -16,8 +18,6 @@ namespace Project.DAL.Entities
         public DateTime TradeCreateDate { get; set; }
         public DateTime? TradeConfirmationDate { get; set; }
         public bool IsConfirmed { get; set; }
-        public User BuyerUser { get; set; }
-        public User SellerUser { get; set; }
-        public UserItem UserItem { get; set; }
+        public GetItemDTO ItemDTO { get; set; }
     }
 }
