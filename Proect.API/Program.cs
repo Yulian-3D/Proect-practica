@@ -8,6 +8,8 @@ using Project.BLL.Services.Contracts;
 using Project.DAL.Configuration;
 using Project.DAL.Entities;
 using Project.DAL.Persistence;
+using Project.DAL.Repositories;
+using Project.DAL.Repositories.Contracts;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -81,6 +83,7 @@ builder.Services.AddAuthorizationBuilder()
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 // Repositories
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddEndpointsApiExplorer();
 
