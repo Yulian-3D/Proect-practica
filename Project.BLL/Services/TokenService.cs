@@ -34,7 +34,8 @@ namespace Project.BLL.Services
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName!),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("userName", user.UserName!)
+                new Claim("userName", user.UserName!),
+                new Claim("userId", user.Id.ToString()),
             };
 
             var roles = await _userManager.GetRolesAsync(user);

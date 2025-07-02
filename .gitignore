@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Proect.API/AppDatabase.db
+/Proect.API/AppDatabase.db-shm
+/Proect.API/AppDatabase.db-wal

@@ -3,15 +3,19 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Proect.API.Middleware;
 using Project.BLL.Services;
 using Project.BLL.Services.Contracts;
 using Project.DAL.Configuration;
 using Project.DAL.Entities;
 using Project.DAL.Persistence;
+using Project.DAL.Repositories;
+using Project.DAL.Repositories.Contracts;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddLogging();
 builder.Services.AddControllers();
 
 // context configuration and database connection
@@ -81,6 +85,7 @@ builder.Services.AddAuthorizationBuilder()
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 // Repositories
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -121,6 +126,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
