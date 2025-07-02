@@ -9,6 +9,6 @@ namespace Project.DAL.Repositories.Contracts
 {
     public interface IUserItemRepository : IGenericRepository<UserItem>
     {
-        Task<IEnumerable<Item>> GetItemsByUserId(int userId);
+        Task<IEnumerable<UserItem>> GetItemsByUserId(int userId);
     }
 }

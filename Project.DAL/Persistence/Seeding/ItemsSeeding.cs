@@ -518,6 +518,12 @@ namespace Project.DAL.Persistence.Seeding
                 UserId = 2,
                 ItemId = 31
             });
+            UserItems.Add(new UserItem()
+            {
+                Id = 17,
+                UserId = 1,
+                ItemId = 32
+            });
 
 
         }
