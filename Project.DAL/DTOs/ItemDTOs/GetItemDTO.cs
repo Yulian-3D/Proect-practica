@@ -1,14 +1,14 @@
 ﻿using Project.DAL.Entities.Enums;
+using Project.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Project.DAL.Entities
+namespace Project.DAL.DTOs.ItemDTOs
 {
-    public class Item
+    public class GetItemDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -16,6 +16,5 @@ namespace Project.DAL.Entities
         public string PhotoLink { get; set; }
         public RarityEnum Rarity { get; set; }
         public string Description { get; set; }
-        public List<UserItem> UserItems { get; set; } = new List<UserItem>();
     }
 }
