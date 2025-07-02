@@ -428,6 +428,97 @@ namespace Project.DAL.Persistence.Seeding
                 UserId = 1,
                 ItemId = 1
             });
+            UserItems.Add(new UserItem()
+            {
+                Id = 2,
+                UserId = 2,
+                ItemId = 2
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 3,
+                UserId = 1,
+                ItemId = 3
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 4,
+                UserId = 2,
+                ItemId = 4
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 5,
+                UserId = 1,
+                ItemId = 5
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 6,
+                UserId = 1,
+                ItemId = 6
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 7,
+                UserId = 2,
+                ItemId = 7
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 8,
+                UserId = 2,
+                ItemId = 7
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 9,
+                UserId = 1,
+                ItemId = 8
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 10,
+                UserId = 2,
+                ItemId = 8
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 11,
+                UserId = 2,
+                ItemId = 9
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 12,
+                UserId = 2,
+                ItemId = 10
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 13,
+                UserId = 1,
+                ItemId = 11
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 14,
+                UserId = 1,
+                ItemId = 30
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 15,
+                UserId = 2,
+                ItemId = 31
+            });
+            UserItems.Add(new UserItem()
+            {
+                Id = 16,
+                UserId = 2,
+                ItemId = 31
+            });
+
 
         }
     }
