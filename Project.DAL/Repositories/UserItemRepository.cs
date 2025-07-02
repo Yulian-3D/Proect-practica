@@ -19,10 +19,10 @@ namespace Project.DAL.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Item>> GetItemsByUserId(int userId)
+        public async Task<IEnumerable<UserItem>> GetItemsByUserId(int userId)
         {
             return await _context.UserItems
-                .Where(i => i.UserId == userId).Select(x => x.Item)
+                .Where(i => i.UserId == userId).Include(x => x.Item)
                 .ToListAsync();
         }
     }
